@@ -1,0 +1,102 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #4d4554;
+}
+
+h2 {
+  text-align: center;
+  color: aliceblue;
+}
+
+form {
+  max-width: 600px;
+  margin: auto;
+  background: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+input,
+select,
+textarea {
+  width: 96%;
+  padding: 10px;
+  margin-bottom: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.custom-radio {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.custom-radio input {
+  display: none; /* Hide the default radio button */
+}
+
+.radio-button {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #4caf50;
+  border-radius: 50%;
+  margin-right: 10px;
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+
+.custom-radio input:checked + .radio-button {
+  background-color: #4caf50; /* Change background on check */
+}
+
+.custom-radio input:checked + .radio-button::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter {
+  border-radius: 5px;
+  height: 50px;
+  background-color: orange;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.newsletter input {
+  margin-top: 10px;
+  margin-right: -300px;
+  transform: scale(1.2);
+}
